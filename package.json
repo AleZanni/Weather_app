@@ -14,5 +14,13 @@
     "request": "^2.88.0"
   },
   "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AleZanni/Weather_app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AleZanni/Weather_app/issues"
+  },
+  "homepage": "https://github.com/AleZanni/Weather_app#readme",
   "description": ""
 }

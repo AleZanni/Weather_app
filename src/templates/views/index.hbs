@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Weather</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="/js/app.js"></script>
     <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
@@ -15,7 +14,16 @@
 <body>
 {{>header}}
 <div class="mainDiv">
+    <form>
+        <input type="text" placeholder="Insert location...">
+        <button>Submit</button>
+    </form>
+</div>
+<div>
+    <p id="message-1"></p>
+    <p id="message-2"></p>
 </div>
     {{>footer}}
+    <script src="/js/app.js"></script>
 </body>
 </html>
