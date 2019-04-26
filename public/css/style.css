@@ -1,32 +1,41 @@
 html {
     font-family: Arial, Helvetica, sans-serif;  
+    font-size: 62.5%;
 }
 
+body{
+  background-image: linear-gradient(to right, rgba(156, 213, 252, .9), rgba(42, 121, 240, .9)), url('../img/sun.jpg');
+  background-size: cover;
+}
+
+
 h1 {
-    color: rgb(173, 173, 173);
+    color: rgb(255, 255, 255);
     text-transform: uppercase;
-    text-align: center;  
+    text-align: center;    
+    font-size: 4rem;
 }
 
 .nav-bar {
-    background-color: #333030;
-    padding: 16px 0px;
+    padding: 1.6rem 0rem;
 }
 
 .nav-bar a {
-    padding: 16px 20px;
+    padding: 1.6rem 2.0rem;
     text-decoration: none;
     color: #ffffff;
     text-transform: uppercase;
+    font-size: 1.6rem;
 }
 
 .nav-bar a:hover {
-    background-color: #888888;
+  background-image: linear-gradient(to right, rgba(35, 167, 255, 0.9), rgba(0, 102, 255, 0.9));
+  border-radius: 2px;
 }
 
 .about-text {
     text-align: center;
-    margin: 30px 60px;
+    margin: 3.0rem 6.0rem;
 }
 
 footer {
@@ -34,3 +43,72 @@ footer {
     bottom: 0%;
 }
 
+.mainDiv {
+    position: relative;
+    padding: 10rem 15rem 0rem 15rem;
+}
+
+.form {
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    display: block;
+}
+
+.input{
+    border: none;
+    border-radius: 2px;
+    padding: 1.5rem 2rem;
+    font-family: inherit;
+    font-size: 1.5rem;
+    width: 85%;
+    margin-bottom: 1rem;
+}
+ .input:focus {
+     outline: none;
+     border-bottom: 3px solid rgb(42, 121, 240);
+ }
+
+
+.submit, .submit:link, .submit:visited {
+    text-transform: uppercase;
+    display: inline-block;
+    text-decoration: none;
+    padding: 1.5rem 2rem;
+    border-radius: 10rem;
+    transition: all 0.2s;
+    font-size: 1.6rem;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    margin-left: 32%;
+  }
+
+  .submit:hover {
+    transform: translatey(-0.3rem);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+  }
+
+  .submit:active {
+      transform: translateY(0.3rem);
+  }
+
+  .output {
+      padding: 3rem 5rem;
+      position: relative;
+     text-align: center;
+
+  }
+
+#message-1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+#message-2 {
+    font-size: 2rem;
+    color: #ffffff;
+    text-transform: uppercase;
+}

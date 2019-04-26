@@ -19,24 +19,24 @@ app.use(express.static(publicDirectoryPath));
 app.get('', (req, res)=>{
     res.render('index', {
         title: 'Weather app',
-        name: 'Alessandro'
+        name: 'Alessandro Zanni'
     });
 });
 
 app.get('/about', (req, res)=>{
     res.render('about', {
         title: 'About page',
-        name: 'Alessandro'
+        name: 'Alessandro Zanni'
     })
 });
 
 app.get('/help',(req, res)=> {
     res.render('help', {
     title: 'Help page', 
-    name: 'Alessandro'
+    name: 'Alessandro Zanni'
 })
 });
-
+//Implementing geocode and forecast
 app.get('/weather', (req, res)=>{
     if(!req.query.address){
         return res.send({
