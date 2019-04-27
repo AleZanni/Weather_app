@@ -3,6 +3,8 @@ const express = require('express');
 const hbs = require('hbs');
 const geocode = require('./utils/geocode');
 const forecast = require('./utils/forecast');
+const temperature = require('./utils/temperature');
+const summary = require('./utils/summary')
 
 const app = express();
 //Define paths to express config
@@ -51,10 +53,21 @@ app.get('/weather', (req, res)=>{
         if(error){
             return res.send({ error });
         }
-        res.send({
-            location,
-            dataForecast,
-            address: req.query.address
+        temperature(latitude, longitude, (error, dataTemp)=>{
+            if(error){
+                return res.send({ error });
+            }
+        summary(latitude, longitude, (error, dataSum)=>{
+            res.send({
+                location,
+                dataForecast,
+                address: req.query.address,
+                dataTemp,
+                dataSum
+        })
+
+        })
+
         })
           });
         });
