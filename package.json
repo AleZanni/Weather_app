@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "node src/app.js"
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js -e js,hbs"
   },
   "keywords": [],
   "author": "",
@@ -13,7 +14,9 @@
     "hbs": "^4.0.4",
     "request": "^2.88.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "nodemon": "^1.18.11"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AleZanni/Weather_app.git"
