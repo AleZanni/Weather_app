@@ -30,7 +30,7 @@ weather.addEventListener('submit', (e)=>{
         //Looping trough the array and changing the background based on results
         for (const word of sumArray){
             if(word === "cloudy" || word === "Cloudy"){
-            document.body.style.backgroundImage = "linear-gradient(to right, rgba(169,169,169, .8), rgba(128,128,128, .8)), url('../img/cloudy.jpg')"
+            document.body.style.backgroundImage = "linear-gradient(to right, rgba(169,169,169, .8), rgba(128,128,128, .8)), url('../img/cloudy.jpg')";
             document.getElementById("video").style.display = "none";
             document.getElementById("output").style.backgroundColor = "rgba(128, 128,128, .5)";
 

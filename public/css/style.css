@@ -3,6 +3,7 @@ html {
     font-size: 62.5%;
 }
 
+
 body{
 z-index: 10;
 background-size: cover;
@@ -14,6 +15,7 @@ h1 {
     text-transform: uppercase;
     text-align: center;    
     font-size: 4rem;
+    margin: auto auto 2rem auto;
 }
 
 .nav-bar {
@@ -40,7 +42,8 @@ h1 {
 
 footer {
     position: absolute;
-    bottom: 0%;
+    bottom: 0rem;
+    left: 1rem;
 }
 
 .mainDiv {
@@ -83,15 +86,20 @@ footer {
     cursor: pointer;
     outline: none;
     margin-left: 32%;
+    background-color: rgba(0,250,154, .4);
+    color: #ffffff;
+
   }
 
   .submit:hover {
     transform: translatey(-0.2rem);
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+    background-color: rgba(0,250,154, .4);
   }
 
   .submit:active {
       transform: translateY(0.2rem);
+      background-color: rgba(0,250,154, .4);
   }
 
   .output {
@@ -178,3 +186,56 @@ height: 97vh;
      margin-top: 2rem;
 
  }
+
+ 
+@media (max-width: 600px) {
+    html {
+      font-size: 55%;
+    }
+
+    
+
+.submit, .submit:link, .submit:visited {
+    text-transform: uppercase;
+    display: inline-block;
+    text-decoration: none;
+    padding: 1.5rem 2rem;
+    background-color: rgba(0,250,154, .4);
+    border-radius: .5rem;
+    transition: all 0.2s;
+    font-size: 1.6rem;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    margin: auto;
+    margin-bottom: 2rem;
+  }
+
+  .submit:hover {
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+    background-color: rgba(0,250,154, .4);
+  }
+
+  .submit:active {
+      transform: translateY(0rem);
+      background-color: rgba(0,250,154, .4);
+  }
+
+  
+h1 {
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;  
+    font-size: 4rem;
+    text-align: left;
+    margin-top: 3rem;
+}
+
+.form {
+    position: absolute;
+    top:50%;
+    left: 0%;
+    transform:translate(0%, -50%);
+    display: block;
+}
+
+  }

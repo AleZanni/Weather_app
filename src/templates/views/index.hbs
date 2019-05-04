@@ -13,9 +13,11 @@
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 </head>
 <body>
-{{>header}}
 {{>video}}
+{{>header}}
+<div class="mainContainer">
 
+    <h1>{{title}}</h1> 
 <div class="mainDiv">
     <form class="form">
         <input type="text" placeholder="Insert location..." class="input">
@@ -25,6 +27,7 @@
 <div class="output" id="output">
     <p id="message-1"></p>
     <p id="message-2"></p>
+</div>
 </div>
 
     {{>footer}}
